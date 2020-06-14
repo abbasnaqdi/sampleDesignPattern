@@ -1,6 +1,6 @@
 package dp
 
-enum class CarType(){
+enum class CarType() {
     ELECTRONIC,
     MECHANICA
 }
@@ -15,7 +15,7 @@ class Tesla(power: Int, speed: Int) : Car() {
     override val power = power
     override val speed = speed
     override fun goScore(): String {
-        return (power * speed).toString()
+        return "tesla score -> ${power * speed}"
     }
 }
 
@@ -23,14 +23,14 @@ class Honda(power: Int, speed: Int) : Car() {
     override val power = power
     override val speed = speed
     override fun goScore(): String {
-        return (power * speed).toString()
+        return "honda score -> ${power * speed}"
     }
 }
 
-class CarFactory(){
-    fun getCar(type: CarType): Car{
-        return if(type == CarType.ELECTRONIC) 
-        Tesla(1000, 200)
+class CarFactory() {
+    fun getCar(type: CarType): Car {
+        return if (type == CarType.ELECTRONIC)
+                Tesla(1000, 480)
         else Honda(1000, 360)
     }
 }
