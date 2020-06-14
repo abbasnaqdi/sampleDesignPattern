@@ -30,7 +30,7 @@ class Honda(power: Int, speed: Int) : Car() {
 class CarFactory() {
     fun getCar(type: CarType): Car {
         return if (type == CarType.ELECTRONIC)
-                Tesla(1000, 480)
+        Tesla(1000, 480)
         else Honda(1000, 360)
     }
 }
