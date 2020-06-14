@@ -57,6 +57,3 @@ fun main() {
     println("electronic car -> the most expensive is ${theElectronicMostExpensive} and the cheapest is ${theElectronicCheapestCar}")
     println("mechanica car -> the most expensive is ${theMechanicaMostExpensive} and the cheapest is ${theMechanicaCheapestCar}")
 }
-
-
-
